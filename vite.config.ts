@@ -6,7 +6,11 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   plugins: [
-    mdsvex({ extensions: ['.svx', '.md'], components: '#lib/components/markdown.ts', component_mode: 'all' }),
+    mdsvex({
+      extensions: ['.svx', '.md'],
+      components: '#lib/components/markdown.ts',
+      component_mode: 'all',
+    }),
     tailwindcss(),
     sveltekit({
       compilerOptions: {
